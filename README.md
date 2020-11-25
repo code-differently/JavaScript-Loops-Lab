@@ -50,11 +50,11 @@ n = 20
 16<br>
 18<br>
 
-## 4) Sum
+## 4) Sum  ########******* *******
 Calculates the sum of the number from n to, but not including m, and returns the answer.
 
 ### Example<br>
-(5,10)
+(5,10) 
 
 *** Output ***
 
