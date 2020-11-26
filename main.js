@@ -88,7 +88,10 @@ for (let currentRow = 1; currentRow <= rows; currentRow++) {
     for (let currentCol = 1; currentCol <= columns; currentCol++){
         let product = ""
         product += currentCol * currentRow
-        if (product < 10) {
+        if (currentCol === 1){
+            num += `|`
+        }
+        if (product < 10 && currentCol > 1) {
             num += `  ${product} |`
         } else {
             num += ` ${product} |`
@@ -100,18 +103,20 @@ for (let currentRow = 1; currentRow <= rows; currentRow++) {
 // Problem 8
 
 function timesTable(rows, columns) {
-
-for (let currentRow = 1; currentRow <= rows; currentRow++) {
-    let num = ""
-    for (let currentCol = 1; currentCol <= columns; currentCol++){
-        let product = ""
-        product += currentCol * currentRow
-        if (product < 10) {
-            num += `  ${product} |`
-        } else {
-            num += ` ${product} |`
+    for (let currentRow = 1; currentRow <= rows; currentRow++) {
+        let num = ""
+        for (let currentCol = 1; currentCol <= columns; currentCol++){
+            let product = ""
+            product += currentCol * currentRow
+            if (currentCol === 1){
+                num += `|`
+            }
+            if (product < 10 && currentCol > 1) {
+                num += `  ${product} |`
+            } else {
+                num += ` ${product} |`
+            }
         }
+        console.log(num)
     }
-    console.log(num)
-}
-}
+    }
