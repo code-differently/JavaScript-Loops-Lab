@@ -59,11 +59,14 @@ function createMultiplicationTable(rows, columns) {
   
   for (let row = 1; row <= rows; row++) {
     for (let column = 1; column <= columns; column++) {
-      let number = row * column;      // It's a multiplication table. So number is row times column. (For example: 25 is row 5 times column 5... 4 is row 2 times column 2... etc.)
-      if (number < 10) {
-        table += `  ${number} |`;     // single digit numbers have two spaces before them.
+      if (column == 1) {
+        table += "|";                 // Add | to the beginning of the first column of every row.
+      }
+      let number = row * column;      // It's a multiplication table. So number is row times column. (For example: row 5 column 5 is 25... row 4 column 5 is 20... etc)
+      if (column > 1 && number < 10) {
+        table += `  ${number} |`;     // Single digit numbers have two spaces before them (except when in the first column.)
       } else {
-        table += ` ${number} |`;      // double digit numbers have one space before them.
+        table += ` ${number} |`;      // Double digit numbers have one space before them.
       }
     }
     table += "\n";                    // Once all columns in a row are filled, go to next line.
