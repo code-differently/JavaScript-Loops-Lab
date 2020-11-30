@@ -32,3 +32,45 @@ alert("Good!") */
     
     console.log(stars);
 }*/
+
+//Problem 7
+/*rows = 4
+columns = 4
+
+for (let currentRow = 1; currentRow <= rows; currentRow++) {
+    let num = ""
+    for (let currentCol = 1; currentCol <= columns; currentCol++){
+        let product = ""
+        product += currentCol * currentRow
+        if (currentCol === 1){
+            num += `|`
+        }
+        if (product < 10 && currentCol > 1) {
+            num += `  ${product} |`
+        } else {
+            num += ` ${product} |`
+        }
+    }
+    console.log(num)
+}*/
+
+//Problem 8
+rows = 6
+columns = 6
+
+for (let currentRow = 1; currentRow <= rows; currentRow++) {
+    let num = ""
+    for (let currentCol = 1; currentCol <= columns; currentCol++){
+        let product = ""
+        product += currentCol * currentRow
+        if (currentCol === 1){
+            num += `|`
+        }
+        if (product < 10 && currentCol > 1) {
+            num += `  ${product} |`
+        } else {
+            num += ` ${product} |`
+        }
+    }
+    console.log(num)
+}
