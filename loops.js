@@ -8,6 +8,7 @@ for (let i=1; i<=10; i++) {
 }
 
 
+
 // 2) Squares
 console.log ("Squares");
 
@@ -15,6 +16,7 @@ for (let i=1; i<=10; i++) {
     let square = i*i;
     console.log (square);
 }
+
 
 
 // 3) Even Under N
@@ -26,6 +28,7 @@ for (let i=2; i<n; i+=2) {
 }
 
 
+
 // 4) Sum
 console.log ("Sum");
 
@@ -34,6 +37,7 @@ for (let i = 5; i <10; i++){
     sum = (sum + i)
 } 
 console.log (sum);
+
 
 
 // 5) Are We There Yet
@@ -47,6 +51,7 @@ if (userResp === "Yes"){
     alert ("Good!");
     } 
 } while (userResp !== "Yes");
+
 
 
 // 6) Triangle
@@ -63,35 +68,38 @@ for (let row=1; row<=5; row++) {
 console.log (triangle);
 
 
+
 // 7) Table Square
 console.log ("Table Square");
 
+let tableSquare = "";
+let tableLine = "";
 
-    
-    let tableSquare = "";
-    let tableLine = "";
-    for (let i = 1; i <=4; i++) {
-       for (let j = 1; j <=4; j++) {
+for (let i = 1; i <=4; i++) {
+    for (let j = 1; j <=4; j++) {
        tableLine += "|"+i*j+"|";
-      }
+    }
   
       tableLine += "\n";
-      tableSquare = tableLine;
-      
-    } 
+      tableSquare = tableLine;    
+} 
     console.log (tableSquare);
   
-    
-    
-  
-
-
-
-
-  
-  
-   
 
 
 // 8) Table Square 2
 console.log ("Table Square 2"); 
+
+let tableSquare2 = "";
+let tableLine2 = "";
+
+for (let i = 1; i <=6; i++) {
+    for (let j = 1; j <=6; j++) {
+       tableLine2 += "|"+i*j+"|";
+    }
+  
+      tableLine2 += "\n";
+      tableSquare2 = tableLine2;    
+} 
+    console.log (tableSquare2);
+
