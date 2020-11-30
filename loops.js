@@ -65,17 +65,23 @@ console.log (triangle);
 
 // 7) Table Square
 console.log ("Table Square");
-/*let tableSquare = "";
 
-for (let i = 1; i<5; i++) {
-    for ( j = 2; j < 17; j + 2){
+let tableSquare = "";
 
+for (let i = 1; i <=4; i++) {
+   for ( j = 1; j <=4; j++){
+        tableSquare = i *j + "|";
+        console.log(tableSquare);
+        //tableSquare = i + j + (i *j) + "|";
+       // console.log(tableSquare);
     } 
-    tableSquare = `${i} + "|" + ${j}`;
-    console.log(tableSquare);
+   // tableSquare = tableSquare + "";
+      
 }
-    
-  */ 
+
+
+  
+  
    
 
 
